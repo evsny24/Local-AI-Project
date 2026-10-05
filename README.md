@@ -22,7 +22,8 @@ Because Docker on Windows does not support native GPU passthrough for AMD hardwa
 With the AI backend going to be running on the host, the next phase involved pulling and configuring the Odysseus application layer via Docker to serve as the primary user interface. 
 
 Why Odysseus and not just Ollama?
-- It was a project set on by Felix Kjellberg (Pewdiepie) who used to make YouTube videos about gaming, but has now transitioned to developing projects like these. I used to watch his gaming videos, and now he has inspired me to get into local AI as well.
+- It was a project set on by Felix Kjellberg (Pewdiepie) who is better known for his YouTube gaming videos, but has now transitioned to developing projects like these. I have followed him for a few years, and now he has inspired me to get into local AI as well.
+- He is coming out with his own lightweight, uncensored AI model designed to be used with Odysseus, which I am interested in using when it comes out.
 - It has a ton of features like deep research, sandboxed agent mode, and it is accessed through a web interface.
 
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/c844d8c1-767a-4556-bd16-d72dbb75554e" />
