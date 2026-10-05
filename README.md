@@ -1,4 +1,4 @@
-# Local AI Project Setup
+# Local Personal AI Agent Setup
 
 An overview of the setup and configuration process for deploying a private, local AI environment on Windows with an AMD graphics card. The goal of this project was to establish a self-hosted LLM interface accessible securely from anywhere to escape the rate limits of cloud models and to experiment with agent capabilities.
 
