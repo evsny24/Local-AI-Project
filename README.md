@@ -32,9 +32,10 @@ Why Odysseus and not just Ollama?
 docker compose up -d --build
 ```
 2. I had to set windows environment variables increase the default context limit after responses would cut off in the middle of long tasks.
-```cmd
-[System.Environment]::SetEnvironmentVariable('Ollama_CONTEXT_LENGTH', '64000', 'User')
-[System.Environment]::SetEnvironmentVariable('Ollama_NUM_PREDICT', '8192', 'User')
+```yaml
+environment:
+  - OLLAMA_CONTEXT_LENGTH=64000
+  - OLLAMA_NUM_PREDICT=8192
 ``` 
 3. I also had to edit the .env file to map my external projects folder to the docker container filesystem
 ```yaml
