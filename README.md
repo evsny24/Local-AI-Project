@@ -54,6 +54,35 @@ The models were retrieved locally via the host terminal, NOT on odysseus's cookb
 ollama pull qwen3.5-vl
 ```
 
+## Easy startup of docker desktop, odysseus container, and ollama
+
+I thought it would be too much work to be clicking around my computer to start all these processes each time I wanted to use it. Therefore, I created a simple .bat file that opens everything that it needs to run:
+
+```cmd
+@echo off
+
+echo [1/3] Starting Ollama ...
+start "" /B "C:\PATH_TO_OLLAMA\Ollama\ollama app.exe"
+
+echo [2/3] Starting Docker Desktop ...
+start "" "C:\PATH_TO_DOCKER\DockerDesktop\Docker Desktop.exe"
+
+echo Waiting for Docker Engine to fully boot up ...
+:wait_loop
+docker ps >nul 2>&1
+if %errorlevel% neq 0 {
+timeout /t 3 /nobreak >nul
+goto wait_loop
+}
+
+echo [3/3] Docker is ready! Launching Odysseus ...
+cd /d "C:\PATH_TO_ODYSSEUS\Odysseus\odysseus"
+docker compose up -d
+
+echo Done! You can close this window now.
+pause
+```
+
 ## Secure Remote Access
 
 To make the entire setup securely accessible outside my network without being able to access the router I am connected to, I used Tailscale and connected all my devices to a tailnet. 
