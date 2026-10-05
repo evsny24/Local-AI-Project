@@ -110,5 +110,8 @@ As a test, I instructed my gemma agent to read the README file from one of my ot
 
 <img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/7487de90-1ceb-47ef-8825-198e3c640303" />
 
-As you can see, there are some minor changes to wording, title heirarchy, bullet point styles, and inline command notation. It successfully cleaned it up to make it look really nice without changing any of the key elements!
+As you can see, there are some minor changes to wording, title heirarchy, bullet point styles, and inline command notation. It successfully cleaned it up to make it look really nice without changing any of the key elements! It is also neat to see its thought processes every step of the way and to watch its workflow:
+
+<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/6945cf82-dd7b-4acd-ba80-edbe5cf52b38" />
+
 
