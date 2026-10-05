@@ -9,7 +9,7 @@ The initial phase involved installing the runtime environment and and containeri
 * **Docker Desktop:** Installed to isolate the web interface layer.
 * **Ollama:** Installed directly on the host Windows environment. 
 
-Because Docker on Windows does not support native GPU passthrough for AMD hardware, running Ollama as a bare-metal host service was necessary to ensure the system could utilize the 16GB VRAM on the graphics card.
+Because Docker on Windows does not support native GPU passthrough for AMD hardware, running Ollama as a bare-metal host service was necessary to ensure the system could use the graphics card.
 
 ## Application Containerization & Interconnect
 
