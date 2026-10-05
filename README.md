@@ -103,4 +103,11 @@ By initializing this private mesh VPN, my local AI interface can be securely rea
 
 ## Working example
 
-After quite a bit of troubleshooting picking the right model and getting the configuration correct, everything is working as expected.
+After quite a bit of troubleshooting picking the right model and getting the configuration correct, everything is working as expected. 
+
+As a test, I instructed my gemma agent to read the README file from one of my other projects (BTD6-Collection-Event-Macro) and rewrite it to make it slightly more clean and professional. The before/after is below, with before being on the left and after being on the right:
+
+<img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/7487de90-1ceb-47ef-8825-198e3c640303" />
+
+As you can see, there are some minor changes to wording, title heirarchy, bullet point styles, and inline command notation. It successfully cleaned it up to make it look really nice without changing any of the key elements!
+
