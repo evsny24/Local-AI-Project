@@ -6,8 +6,14 @@ An overview of the setup and configuration process for deploying a private, loca
 
 The initial phase involved installing the runtime environment and and containerization layers required to support the local stack:
 
-* **Docker Desktop:** Installed to isolate the web interface layer.
-* **Ollama:** Installed directly on the host Windows environment. 
+- **Docker Desktop:** Installed to isolate the web interface layer.
+  
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/0c2b5ce9-d794-41a5-b8b2-3dc3b6997662" />
+
+- **Ollama:** Installed directly on the host Windows environment.
+  
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/a06eed71-4133-41e9-86e3-b2bd8298ca7f" />
+
 
 Because Docker on Windows does not support native GPU passthrough for AMD hardware, running Ollama as a bare-metal host service was necessary to ensure the system could use the graphics card.
 
@@ -18,6 +24,8 @@ With the AI backend going to be running on the host, the next phase involved pul
 Why Odysseus and not just Ollama?
 - It was a project set on by Felix Kjellberg (Pewdiepie) who used to make YouTube videos about gaming, but has now transitioned to developing projects like these. I used to watch his gaming videos, and now he has inspired me to get into local AI as well.
 - It has a ton of features like deep research, sandboxed agent mode, and it is accessed through a web interface.
+
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/c844d8c1-767a-4556-bd16-d72dbb75554e" />
 
 1. **Setup:** I used the easiest method to install, which is docker compose in the odysseus folder.
 ```cmd
@@ -88,3 +96,5 @@ pause
 To make the entire setup securely accessible outside my network without being able to access the router I am connected to, I used Tailscale and connected all my devices to a tailnet. 
 
 By initializing this private mesh VPN, my local AI interface can be securely reached from any authorized external device like my phons by routing traffic directly through the assigned Tailscale IP address.
+
+<img width="2033" height="285" alt="image" src="https://github.com/user-attachments/assets/06300f00-4c97-4186-a560-51ca8e8c8859" />
