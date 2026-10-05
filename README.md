@@ -17,6 +17,28 @@ With the AI backend going to be running on the host, the next phase involved pul
 
 Why Odysseus and not just Ollama?
 - It was a project set on by Felix Kjellberg (Pewdiepie) who used to make YouTube videos about gaming, but has now transitioned to developing projects like these. I used to watch his gaming videos, and now he has inspired me to get into local AI as well.
+- It has a ton of features like deep research, sandboxed agent mode, and it is accessed through a web interface.
+
+1. **Setup:** I used the easiest method to install, which is docker compose in the odysseus folder.
+```cmd
+docker compose up -d --build
+```
+2. I had to set windows environment variables increase the default context limit after responses would cut off in the middle of long tasks.
+```cmd
+[System.Environment]::SetEnvironmentVariable('Ollama_CONTEXT_LENGTH', '64000', 'User')
+[System.Environment]::SetEnvironmentVariable('Ollama_NUM_PREDICT', '8192', 'User')
+``` 
+3. I also had to edit the .env file to map my external projects folder to the docker container filesystem
+```yaml
+volumes:
+  - ./projects:/mnt/projects:z
+```
+then reboot
+```cmd
+docker compose down
+docker compose up -d
+```
+
 
 ## Hardware-Specific Model Selection
 
