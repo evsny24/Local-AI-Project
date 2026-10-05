@@ -37,7 +37,7 @@ environment:
   - OLLAMA_CONTEXT_LENGTH=64000
   - OLLAMA_NUM_PREDICT=8192
 ``` 
-3. I also had to edit the .env file to map my external projects folder to the docker container filesystem so changes could be made on my filesystem rather than the docker local filesystem.
+3. I also had to map my external projects folder to the docker container filesystem so changes could be made on my filesystem rather than the docker local filesystem.
 ```yaml
 volumes:
   - C:/path_to_local_projects_folder:/app/projects
