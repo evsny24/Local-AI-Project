@@ -99,4 +99,4 @@ To make the entire setup securely accessible outside my network without being ab
 
 By initializing this private mesh VPN, my local AI interface can be securely reached from any authorized external device like my phons by routing traffic directly through the assigned Tailscale IP address.
 
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/06300f00-4c97-4186-a560-51ca8e8c8859" />
+<img width="100%" height="100%" alt="image" src="https://github.com/user-attachments/assets/06300f00-4c97-4186-a560-51ca8e8c8859" />
